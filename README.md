@@ -27,6 +27,8 @@ This is a tool back of random useful functions.
 
 ## Contributing
 
-`npm run test` - Runs the test runner
-`npm run build` - Builds using `tsc` from configs in the `tsconfig.json`
-`npm run dev` - Runs build and watches for changes
+```bash
+npm run test # Runs the test runner
+npm run build # Builds using `tsc` from configs in the `tsconfig.json`
+npm run dev # Runs build and watches for changes
+```
