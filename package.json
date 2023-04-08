@@ -1,5 +1,5 @@
 {
-  "name": "@r-t-p/clean-typescript",
+  "name": "@r-t-p/utilities",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
@@ -19,10 +19,10 @@
   },
     "repository": {
     "type": "git",
-    "url": "git+https://github.com/rock-the-party/clean-typescript.git"
+    "url": "git+https://github.com/rock-the-party/utilities.git"
   },
   "bugs": {
-    "url": "https://github.com/rock-the-party/clean-typescript/issues"
+    "url": "https://github.com/rock-the-party/utilities/issues"
   },
   "keywords": [],
   "devDependencies": {
@@ -35,8 +35,8 @@
     "preset": "ts-jest",
     "testEnvironment": "node",
     "testMatch": [
-      "**/__tests__/**/*.ts?(x)",
-      "**/?(*.)+(spec|test).ts?(x)"
+      "**/__tests__/**/*.ts",
+      "**/*.test.ts"
     ]
   }
 }

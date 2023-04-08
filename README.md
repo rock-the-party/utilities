@@ -1,24 +1,12 @@
-# clean-typescript
+# Utilities
 
-This is a simple typescript template repo for getting started.  Start coding index.ts.  Tooling uses:
+This is a tool back of random useful functions.
 
-- `tsc` for building
-- `jest` for testing
-- `npm` for versioning
-- `.github/workflows` (i.e github actions) for automation
-- `releasing` on github will publish to npm
 
-If you want to release to npm you can release with the button in github and the github actions will ship it to npm.
-
-## To Do with a new repo
-
-- [ ] Update the package.json with the correct repo and name
-- [ ] Publish to npm for the first time. Doing it locally with `npm publish --access=public` is probably easiest
-- [ ] Clear template info for readme and update with better info
-
-## In your repo, delete above this and carry on with your new repo ^^^
 
 ### Getting Started
+
+- `npm install @r-t-p/utilities`  From then you can 
 
 - `npm run test` - Runs the test runner
 - `npm run build` - Builds using `tsc` from configs in the `tsconfig.json`
