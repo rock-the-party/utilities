@@ -3,20 +3,30 @@
 This is a tool back of random useful functions.
 
 
+- [Getting Started](#getting-started)
+- [Uuid](#uuid)
+- [Contributing](#contributing)
 
-### Getting Started
+## Getting Started {#getting-started}
 
-- `npm install @r-t-p/utilities`  From then you can 
+`npm install --save @r-t-p/utilities`
 
-- `npm run test` - Runs the test runner
-- `npm run build` - Builds using `tsc` from configs in the `tsconfig.json`
-- `npm run dev` - Runs build and watches
+## UUID {#uuid}
 
-### Versioning
+```typescript
+  import { generateUUID, isUUID } from "@r-t-p/utilities";
 
-These commands should be run from the master branch when ready to bump a version.
-Bumping a version will commit the bump and push it up as long as pushing tags up for release.
+  for (let i = 0; i < 500; ++i) {
+    let id = generateUUID();
+    if (!isUUID(id)) {
+      console.log(i, id);
+      throw new Error("Failure");
+    }
+  }
+```
 
-- `npm run bump` - Bumps current version i.e. `1.2.4` would bump to `1.2.5`
-- `npm run bump-minor` - Bumps Minor version i.e. `1.2.4` would bump to `1.3.0`
-- `npm run bump-major` - Bumps current version i.e. `1.2.4` would bump to `2.0.0`
+## Contributing {#contributing}
+
+`npm run test` - Runs the test runner
+`npm run build` - Builds using `tsc` from configs in the `tsconfig.json`
+`npm run dev` - Runs build and watches for changes

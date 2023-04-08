@@ -1,6 +1,6 @@
-import { generateUuid, isUUID } from "./src/uuid";
+import { generateUUID, isUUID } from "./src/uuid";
 
 export {
-  generateUuid,
+  generateUUID,
   isUUID
 }

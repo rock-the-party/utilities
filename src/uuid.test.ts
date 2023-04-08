@@ -1,4 +1,4 @@
-import { generateUuid, isUUID } from './uuid';
+import { generateUUID, isUUID } from './uuid';
 
 
 let uuids: string[] =  [
@@ -28,21 +28,21 @@ let uuids: string[] =  [
   "e5d3153c-b7c3-46ab-a2d9-1e1545b5a17a"
 ];
 
-describe('generateUuid function', () => {
+describe('generateUUID function', () => {
   it('should generate a string', () => {
-    const uuid = generateUuid();
+    const uuid = generateUUID();
     expect(typeof uuid).toBe('string');
   });
 
   it('should generate a string in the correct format', () => {
-    const uuid = generateUuid();
+    const uuid = generateUUID();
     console.log(uuid);
     expect(uuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i);
   });
 
   it('should generate unique strings', () => {
-    const uiid1 = generateUuid();
-    const uiid2 = generateUuid();
+    const uiid1 = generateUUID();
+    const uiid2 = generateUUID();
     expect(uiid1).not.toBe(uiid2);
   });
 
