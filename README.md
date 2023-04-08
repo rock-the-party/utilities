@@ -7,11 +7,11 @@ This is a tool back of random useful functions.
 - [Uuid](#uuid)
 - [Contributing](#contributing)
 
-## Getting Started {#getting-started}
+## Getting Started
 
 `npm install --save @r-t-p/utilities`
 
-## UUID {#uuid}
+## UUID
 
 ```typescript
   import { generateUUID, isUUID } from "@r-t-p/utilities";
@@ -25,7 +25,7 @@ This is a tool back of random useful functions.
   }
 ```
 
-## Contributing {#contributing}
+## Contributing
 
 `npm run test` - Runs the test runner
 `npm run build` - Builds using `tsc` from configs in the `tsconfig.json`
