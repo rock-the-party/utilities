@@ -2,8 +2,8 @@
   "name": "@r-t-p/utilities",
   "version": "0.0.4",
   "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "bin/index.js",
+  "types": "bin/index.d.ts",
   "author": "justplainfred",
   "license": "MIT",
   "scripts": {
