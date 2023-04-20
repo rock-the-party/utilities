@@ -36,7 +36,6 @@ describe('generateUUID function', () => {
 
   it('should generate a string in the correct format', () => {
     const uuid = generateUUID();
-    console.log(uuid);
     expect(uuid).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i);
   });
 

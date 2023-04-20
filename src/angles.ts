@@ -1,3 +1,5 @@
+import { NextDouble } from "./random";
+import { Point, SlopeIntercept } from "./types";
 
 export function radiansToDegrees(radians: number): number {
   return radians * (180/Math.PI);
@@ -31,4 +33,36 @@ export function radianHalfAngle(radianAngleA: number, radianAngleB: number): num
   }
 
   return (Math.PI / 2 - angle) / (Math.PI / 2);
+}
+
+export function randomPointOnCircle(): Point {
+  let angle = NextDouble() * 2 * Math.PI;
+  return {
+    x: Math.cos(angle),
+    y: Math.sin(angle)
+  }
+}
+
+export function randomPointOnCircleBetweenAngles(minRadian: number, maxRadian:number): Point {
+  if (minRadian > maxRadian) {
+    let temp = maxRadian;
+    maxRadian = minRadian;
+    minRadian = temp;
+  }
+  const angleRange = maxRadian - minRadian;
+  const angle = minRadian + Math.random() * angleRange;
+
+  return {
+    x: Math.cos(angle),
+    y: Math.sin(angle)
+  };
+}
+
+export function angleFromTwoPoints(p1: Point, p2: Point): number {
+  const dx = p2.x - p1.x;
+  const dy = p2.y - p1.y;
+  if (dx === 0) {
+    return Math.PI / 2; // 90 degrees
+  }
+  return Math.atan(-dy / dx);
 }
