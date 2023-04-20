@@ -1,0 +1,15 @@
+import { Circle, Line, Point, SlopeIntercept, Vector } from "./types";
+export declare function areAlmostTheSame(n1: number, n2: number, tolerance?: number): boolean;
+export declare function getSlopeInterceptFromVector(v: Vector): SlopeIntercept;
+export declare function interceptOfVectors(v1: Vector, v2: Vector): Point | null;
+export declare function slopeInterceptFromTwoPoints(p1: Point, p2: Point): SlopeIntercept;
+export declare function getPerpendicularSlope(si: SlopeIntercept): number;
+export declare function getSlopeInterceptForm(p: Point, slope: number): SlopeIntercept;
+export declare function intersectionOfSlopeIntercepts(s1: SlopeIntercept, s2: SlopeIntercept): Point | null;
+export declare function isPointInCircle(p: Point, circle: Circle): boolean;
+export declare function distanceBetweenPoints(p1: Point, p2: Point): number;
+export declare function areCirclesColliding(c1: Circle, c2: Circle): boolean;
+export declare function isPointOnLine(p0: Point, line: Line): boolean;
+export declare function getPointFromVector(v: Vector): Point;
+export declare function multiplyVectorByScalar(v: Vector, scalar: number): Point;
+export declare function addVectors(v1: Vector, v2: Vector): Point;

@@ -1,5 +1,5 @@
 import { NextDouble } from "./random";
-import { Point, SlopeIntercept } from "./types";
+import { Point } from "./types";
 
 export function radiansToDegrees(radians: number): number {
   return radians * (180/Math.PI);
